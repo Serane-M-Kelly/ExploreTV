@@ -21,6 +21,7 @@
 		17B227632FF4618B009766AA /* SectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B227612FF4618B009766AA /* SectionRow.swift */; };
 		17B227642FF4618B009766AA /* ContentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B2275F2FF4618B009766AA /* ContentCard.swift */; };
 		17B227652FF4618B009766AA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B227662FF4618B009766AA /* DetailView.swift */; };
+		17B227682FF4619C009766AA /* FavoritesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B227672FF4619C009766AA /* FavoritesStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		17B227602FF4618B009766AA /* HeroBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroBannerView.swift; sourceTree = "<group>"; };
 		17B227612FF4618B009766AA /* SectionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionRow.swift; sourceTree = "<group>"; };
 		17B227662FF4618B009766AA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		17B227672FF4619C009766AA /* FavoritesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -125,6 +127,7 @@
 				17B227602FF4618B009766AA /* HeroBannerView.swift */,
 				17B227612FF4618B009766AA /* SectionRow.swift */,
 				17B227662FF4618B009766AA /* DetailView.swift */,
+				17B227672FF4619C009766AA /* FavoritesStore.swift */,
 				17B227592FF45960009766AA /* Category.swift */,
 				17B2275A2FF45960009766AA /* MediaItem.swift */,
 				17B2275B2FF45960009766AA /* SampleData.swift */,
@@ -294,6 +297,7 @@
 				17B2274A2FF4553B009766AA /* ExploreTVApp.swift in Sources */,
 				17B2274B2FF4553B009766AA /* HomeView.swift in Sources */,
 				17B227652FF4618B009766AA /* DetailView.swift in Sources */,
+				17B227682FF4619C009766AA /* FavoritesStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

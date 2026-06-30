@@ -27,4 +27,5 @@ struct HomeView: View {
 
 #Preview {
     HomeView()
+        .environmentObject(FavoritesStore())
 }

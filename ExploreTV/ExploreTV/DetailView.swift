@@ -2,12 +2,7 @@ import SwiftUI
 
 struct DetailView: View {
     let item: MediaItem
-    @State private var isFavorite: Bool
-
-    init(item: MediaItem) {
-        self.item = item
-        self._isFavorite = State(initialValue: item.isFavorite)
-    }
+    @EnvironmentObject var favorites: FavoritesStore
 
     var body: some View {
         ZStack {
@@ -68,11 +63,11 @@ struct DetailView: View {
                             }
                             .buttonStyle(.plain)
 
-                            // Favorites — local toggle state
-                            Button(action: { isFavorite.toggle() }) {
-                                Image(systemName: isFavorite ? "heart.fill" : "heart")
+                            // Favorites — persisted via FavoritesStore
+                            Button(action: { favorites.toggle(item) }) {
+                                Image(systemName: favorites.isFavorite(item) ? "heart.fill" : "heart")
                                     .font(.title2)
-                                    .foregroundStyle(isFavorite ? Color("AccentBlue") : .white)
+                                    .foregroundStyle(favorites.isFavorite(item) ? Color("AccentBlue") : .white)
                                     .frame(width: 48, height: 48)
                                     .background(Color("CardBackground"))
                                     .clipShape(RoundedRectangle(cornerRadius: 8))
@@ -106,5 +101,6 @@ struct DetailView: View {
 #Preview {
     NavigationStack {
         DetailView(item: SampleData.featured)
+            .environmentObject(FavoritesStore())
     }
 }

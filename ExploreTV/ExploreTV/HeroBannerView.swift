@@ -59,6 +59,9 @@ struct HeroBannerView: View {
 }
 
 #Preview {
-    HeroBannerView(item: SampleData.featured)
-        .background(Color("AppBackground"))
+    NavigationStack {
+        HeroBannerView(item: SampleData.featured)
+            .background(Color("AppBackground"))
+    }
+    .environmentObject(FavoritesStore())
 }

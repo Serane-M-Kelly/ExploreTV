@@ -32,4 +32,5 @@ struct ExploreView: View {
 
 #Preview {
     ExploreView()
+        .environmentObject(FavoritesStore())
 }

@@ -31,4 +31,5 @@ struct SectionRow: View {
     SectionRow(category: .action, items: SampleData.items(for: .action))
         .padding(.vertical)
         .background(Color("AppBackground"))
+        .environmentObject(FavoritesStore())
 }
