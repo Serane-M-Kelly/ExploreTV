@@ -17,6 +17,9 @@
 		17B2275C2FF45960009766AA /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B2275B2FF45960009766AA /* SampleData.swift */; };
 		17B2275D2FF45960009766AA /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B227592FF45960009766AA /* Category.swift */; };
 		17B2275E2FF45960009766AA /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B2275A2FF45960009766AA /* MediaItem.swift */; };
+		17B227622FF4618B009766AA /* HeroBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B227602FF4618B009766AA /* HeroBannerView.swift */; };
+		17B227632FF4618B009766AA /* SectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B227612FF4618B009766AA /* SectionRow.swift */; };
+		17B227642FF4618B009766AA /* ContentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B2275F2FF4618B009766AA /* ContentCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		17B227592FF45960009766AA /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		17B2275A2FF45960009766AA /* MediaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItem.swift; sourceTree = "<group>"; };
 		17B2275B2FF45960009766AA /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		17B2275F2FF4618B009766AA /* ContentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCard.swift; sourceTree = "<group>"; };
+		17B227602FF4618B009766AA /* HeroBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroBannerView.swift; sourceTree = "<group>"; };
+		17B227612FF4618B009766AA /* SectionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -113,6 +119,9 @@
 		17B227452FF4553B009766AA /* ExploreTV */ = {
 			isa = PBXGroup;
 			children = (
+				17B2275F2FF4618B009766AA /* ContentCard.swift */,
+				17B227602FF4618B009766AA /* HeroBannerView.swift */,
+				17B227612FF4618B009766AA /* SectionRow.swift */,
 				17B227592FF45960009766AA /* Category.swift */,
 				17B2275A2FF45960009766AA /* MediaItem.swift */,
 				17B2275B2FF45960009766AA /* SampleData.swift */,
@@ -272,6 +281,9 @@
 				17B227462FF4553B009766AA /* ExploreView.swift in Sources */,
 				17B2275C2FF45960009766AA /* SampleData.swift in Sources */,
 				17B2275D2FF45960009766AA /* Category.swift in Sources */,
+				17B227622FF4618B009766AA /* HeroBannerView.swift in Sources */,
+				17B227632FF4618B009766AA /* SectionRow.swift in Sources */,
+				17B227642FF4618B009766AA /* ContentCard.swift in Sources */,
 				17B2275E2FF45960009766AA /* MediaItem.swift in Sources */,
 				17B227472FF4553B009766AA /* ProfileView.swift in Sources */,
 				17B227482FF4553B009766AA /* ContentView.swift in Sources */,
