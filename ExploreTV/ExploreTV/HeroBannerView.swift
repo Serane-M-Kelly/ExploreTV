@@ -39,15 +39,18 @@ struct HeroBannerView: View {
                     .foregroundStyle(.white.opacity(0.7))
                     .lineLimit(2)
 
-                Label("Regarder", systemImage: "play.fill")
-                    .font(.subheadline)
-                    .fontWeight(.semibold)
-                    .foregroundStyle(.white)
-                    .padding(.horizontal, 20)
-                    .padding(.vertical, 10)
-                    .background(Color("AccentBlue"))
-                    .clipShape(RoundedRectangle(cornerRadius: 8))
-                    .padding(.top, 4)
+                NavigationLink(destination: DetailView(item: item)) {
+                    Label("Regarder", systemImage: "play.fill")
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                        .foregroundStyle(.white)
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 10)
+                        .background(Color("AccentBlue"))
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                        .padding(.top, 4)
+                }
+                .buttonStyle(.plain)
             }
             .padding(.horizontal, 16)
             .padding(.bottom, 20)

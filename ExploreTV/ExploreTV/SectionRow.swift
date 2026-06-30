@@ -15,7 +15,10 @@ struct SectionRow: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 12) {
                     ForEach(items) { item in
-                        ContentCard(item: item)
+                        NavigationLink(destination: DetailView(item: item)) {
+                            ContentCard(item: item)
+                        }
+                        .buttonStyle(.plain)
                     }
                 }
                 .padding(.horizontal, 16)
