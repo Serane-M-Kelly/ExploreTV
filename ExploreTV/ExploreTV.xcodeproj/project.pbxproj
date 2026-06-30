@@ -6,6 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		17B227462FF4553B009766AA /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B227412FF4553B009766AA /* ExploreView.swift */; };
+		17B227472FF4553B009766AA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B227442FF4553B009766AA /* ProfileView.swift */; };
+		17B227482FF4553B009766AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B2273F2FF4553B009766AA /* ContentView.swift */; };
+		17B227492FF4553B009766AA /* MyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B227432FF4553B009766AA /* MyListView.swift */; };
+		17B2274A2FF4553B009766AA /* ExploreTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B227402FF4553B009766AA /* ExploreTVApp.swift */; };
+		17B2274B2FF4553B009766AA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B227422FF4553B009766AA /* HomeView.swift */; };
+		17B2274C2FF4553B009766AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B2273E2FF4553B009766AA /* Assets.xcassets */; };
+		17B2275C2FF45960009766AA /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B2275B2FF45960009766AA /* SampleData.swift */; };
+		17B2275D2FF45960009766AA /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B227592FF45960009766AA /* Category.swift */; };
+		17B2275E2FF45960009766AA /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B2275A2FF45960009766AA /* MediaItem.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		17B2271A2FF3EA0D009766AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,14 +40,19 @@
 		17B2270A2FF3EA0C009766AA /* ExploreTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExploreTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B227192FF3EA0D009766AA /* ExploreTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExploreTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B227232FF3EA0D009766AA /* ExploreTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExploreTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17B2273E2FF4553B009766AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17B2273F2FF4553B009766AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		17B227402FF4553B009766AA /* ExploreTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreTVApp.swift; sourceTree = "<group>"; };
+		17B227412FF4553B009766AA /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		17B227422FF4553B009766AA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		17B227432FF4553B009766AA /* MyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListView.swift; sourceTree = "<group>"; };
+		17B227442FF4553B009766AA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		17B227592FF45960009766AA /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		17B2275A2FF45960009766AA /* MediaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItem.swift; sourceTree = "<group>"; };
+		17B2275B2FF45960009766AA /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		17B2270C2FF3EA0C009766AA /* ExploreTV */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ExploreTV;
-			sourceTree = "<group>";
-		};
 		17B2271C2FF3EA0D009766AA /* ExploreTVTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ExploreTVTests;
@@ -75,7 +93,7 @@
 		17B227012FF3EA0C009766AA = {
 			isa = PBXGroup;
 			children = (
-				17B2270C2FF3EA0C009766AA /* ExploreTV */,
+				17B227452FF4553B009766AA /* ExploreTV */,
 				17B2271C2FF3EA0D009766AA /* ExploreTVTests */,
 				17B227262FF3EA0D009766AA /* ExploreTVUITests */,
 				17B2270B2FF3EA0C009766AA /* Products */,
@@ -92,6 +110,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		17B227452FF4553B009766AA /* ExploreTV */ = {
+			isa = PBXGroup;
+			children = (
+				17B227592FF45960009766AA /* Category.swift */,
+				17B2275A2FF45960009766AA /* MediaItem.swift */,
+				17B2275B2FF45960009766AA /* SampleData.swift */,
+				17B2273E2FF4553B009766AA /* Assets.xcassets */,
+				17B2273F2FF4553B009766AA /* ContentView.swift */,
+				17B227402FF4553B009766AA /* ExploreTVApp.swift */,
+				17B227412FF4553B009766AA /* ExploreView.swift */,
+				17B227422FF4553B009766AA /* HomeView.swift */,
+				17B227432FF4553B009766AA /* MyListView.swift */,
+				17B227442FF4553B009766AA /* ProfileView.swift */,
+			);
+			path = ExploreTV;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +141,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				17B2270C2FF3EA0C009766AA /* ExploreTV */,
 			);
 			name = ExploreTV;
 			packageProductDependencies = (
@@ -212,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17B2274C2FF4553B009766AA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +269,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17B227462FF4553B009766AA /* ExploreView.swift in Sources */,
+				17B2275C2FF45960009766AA /* SampleData.swift in Sources */,
+				17B2275D2FF45960009766AA /* Category.swift in Sources */,
+				17B2275E2FF45960009766AA /* MediaItem.swift in Sources */,
+				17B227472FF4553B009766AA /* ProfileView.swift in Sources */,
+				17B227482FF4553B009766AA /* ContentView.swift in Sources */,
+				17B227492FF4553B009766AA /* MyListView.swift in Sources */,
+				17B2274A2FF4553B009766AA /* ExploreTVApp.swift in Sources */,
+				17B2274B2FF4553B009766AA /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +437,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BT677Z9H5H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -426,6 +469,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BT677Z9H5H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
