@@ -22,6 +22,8 @@
 		17B227642FF4618B009766AA /* ContentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B2275F2FF4618B009766AA /* ContentCard.swift */; };
 		17B227652FF4618B009766AA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B227662FF4618B009766AA /* DetailView.swift */; };
 		17B227682FF4619C009766AA /* FavoritesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B227672FF4619C009766AA /* FavoritesStore.swift */; };
+		17B2276A2FF461AB009766AA /* CategoryStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B227692FF461AB009766AA /* CategoryStyle.swift */; };
+		17B227702FF461AB009766AA /* PosterArtworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B227712FF461AB009766AA /* PosterArtworkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		17B227612FF4618B009766AA /* SectionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionRow.swift; sourceTree = "<group>"; };
 		17B227662FF4618B009766AA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		17B227672FF4619C009766AA /* FavoritesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesStore.swift; sourceTree = "<group>"; };
+		17B227692FF461AB009766AA /* CategoryStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStyle.swift; sourceTree = "<group>"; };
+		17B227712FF461AB009766AA /* PosterArtworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterArtworkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -123,6 +127,8 @@
 		17B227452FF4553B009766AA /* ExploreTV */ = {
 			isa = PBXGroup;
 			children = (
+				17B227692FF461AB009766AA /* CategoryStyle.swift */,
+				17B227712FF461AB009766AA /* PosterArtworkView.swift */,
 				17B2275F2FF4618B009766AA /* ContentCard.swift */,
 				17B227602FF4618B009766AA /* HeroBannerView.swift */,
 				17B227612FF4618B009766AA /* SectionRow.swift */,
@@ -298,6 +304,8 @@
 				17B2274B2FF4553B009766AA /* HomeView.swift in Sources */,
 				17B227652FF4618B009766AA /* DetailView.swift in Sources */,
 				17B227682FF4619C009766AA /* FavoritesStore.swift in Sources */,
+				17B2276A2FF461AB009766AA /* CategoryStyle.swift in Sources */,
+				17B227702FF461AB009766AA /* PosterArtworkView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

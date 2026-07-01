@@ -1,24 +1,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selectedTab = 0
+
     var body: some View {
-        TabView {
+        TabView(selection: $selectedTab) {
             HomeView()
                 .tabItem {
                     Label("Accueil", systemImage: "house.fill")
                 }
+                .tag(0)
             ExploreView()
                 .tabItem {
                     Label("Explorer", systemImage: "magnifyingglass")
                 }
-            MyListView()
+                .tag(1)
+            MyListView(onExplore: { selectedTab = 1 })
                 .tabItem {
                     Label("Ma liste", systemImage: "heart.fill")
                 }
+                .tag(2)
             ProfileView()
                 .tabItem {
                     Label("Profil", systemImage: "person.fill")
                 }
+                .tag(3)
         }
         .tint(Color("AccentBlue"))
     }

@@ -1,31 +1,29 @@
 import SwiftUI
 
+/// Carte d'affiche abstraite (maquette ExploreTV).
+/// - `fillWidth` : occupe toute la largeur disponible (grille Explorer).
+/// - sinon largeur/hauteur fixes (sections horizontales, suggestions).
 struct ContentCard: View {
     let item: MediaItem
+    var width: CGFloat = 130
+    var height: CGFloat = 184
+    var fillWidth: Bool = false
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 6) {
-            ZStack {
-                RoundedRectangle(cornerRadius: 10)
-                    .fill(Color("CardBackground"))
-                Image(systemName: item.imageName)
-                    .font(.system(size: 36))
-                    .foregroundStyle(Color("AccentBlue"))
-            }
-            .frame(width: 120, height: 168)
-
-            Text(item.title)
-                .font(.caption)
-                .fontWeight(.semibold)
-                .foregroundStyle(.white)
-                .lineLimit(2)
-                .frame(width: 120, alignment: .leading)
-        }
+        PosterArtworkView(item: item, showsCardOverlay: true)
+            .frame(maxWidth: fillWidth ? .infinity : nil)
+            .frame(width: fillWidth ? nil : width, height: height)
+            .clipShape(RoundedRectangle(cornerRadius: 16))
+            .overlay(
+                RoundedRectangle(cornerRadius: 16)
+                    .stroke(.white.opacity(0.07), lineWidth: 1)
+            )
+            .shadow(color: .black.opacity(0.4), radius: 11, x: 0, y: 8)
     }
 }
 
 #Preview {
-    ContentCard(item: SampleData.allMedia[0])
+    ContentCard(item: SampleData.featured)
         .padding()
-        .background(Color("AppBackground"))
+        .background(Theme.background)
 }

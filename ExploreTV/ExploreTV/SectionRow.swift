@@ -1,19 +1,19 @@
 import SwiftUI
 
+/// Section horizontale de l'accueil (maquette homeRows) : titre + carrousel de cartes.
 struct SectionRow: View {
-    let category: Category
+    let title: String
     let items: [MediaItem]
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text(category.rawValue)
-                .font(.title3)
-                .fontWeight(.bold)
-                .foregroundStyle(.white)
-                .padding(.horizontal, 16)
+        VStack(alignment: .leading, spacing: 13) {
+            Text(title)
+                .font(.system(size: 18, weight: .bold))
+                .foregroundStyle(Theme.textPrimary)
+                .padding(.horizontal, 20)
 
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 12) {
+                HStack(spacing: 13) {
                     ForEach(items) { item in
                         NavigationLink(destination: DetailView(item: item)) {
                             ContentCard(item: item)
@@ -21,15 +21,18 @@ struct SectionRow: View {
                         .buttonStyle(.plain)
                     }
                 }
-                .padding(.horizontal, 16)
+                .padding(.horizontal, 20)
+                .padding(.bottom, 4)
             }
         }
     }
 }
 
 #Preview {
-    SectionRow(category: .action, items: SampleData.items(for: .action))
-        .padding(.vertical)
-        .background(Color("AppBackground"))
-        .environmentObject(FavoritesStore())
+    NavigationStack {
+        SectionRow(title: "Documentaires", items: SampleData.items(for: .documentaires))
+            .padding(.vertical)
+            .background(Theme.background)
+    }
+    .environmentObject(FavoritesStore())
 }
