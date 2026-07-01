@@ -129,7 +129,7 @@ struct ProfileView: View {
 
                     Image(systemName: "chevron.right")
                         .font(.system(size: 13, weight: .semibold))
-                        .foregroundStyle(Color(hex: "566180"))
+                        .foregroundStyle(Theme.chevronMuted)
                 }
                 .padding(.horizontal, 16)
                 .padding(.vertical, 15)

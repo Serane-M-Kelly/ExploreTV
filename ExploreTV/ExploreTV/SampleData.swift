@@ -11,7 +11,7 @@ struct SampleData {
             gradientStart: "#06283d", gradientEnd: "#1f8fbf",
             tags: ["Nature", "Océan", "4K"],
             summary: "Plongée contemplative dans la mémoire des grands fonds : courants, lumière et silence d'un monde que l'on connaît à peine.",
-            motifIndex: 0, imageName: "water.waves"
+            motifIndex: 0
         ),
         MediaItem(
             slug: "street-pulse", title: "Street Pulse", cat: "Série documentaire",
@@ -19,7 +19,7 @@ struct SampleData {
             gradientStart: "#16162e", gradientEnd: "#4361ee",
             tags: ["Urbain", "Société"],
             summary: "Le battement des grandes villes raconté par celles et ceux qui les font vivre la nuit, en six épisodes.",
-            motifIndex: 1, imageName: "building.2.fill"
+            motifIndex: 1
         ),
         MediaItem(
             slug: "beyond-mars", title: "Beyond Mars", cat: "Science & Futur",
@@ -27,7 +27,7 @@ struct SampleData {
             gradientStart: "#1a1240", gradientEnd: "#6d28d9",
             tags: ["Espace", "Science", "Exploration"],
             summary: "Et après Mars ? Une enquête visuelle sur les prochaines frontières de l'exploration spatiale et les esprits qui les imaginent.",
-            motifIndex: 2, imageName: "sparkles"
+            motifIndex: 2
         ),
         MediaItem(
             slug: "hidden-kyoto", title: "Hidden Kyoto", cat: "Voyage & Culture",
@@ -35,7 +35,7 @@ struct SampleData {
             gradientStart: "#0f2027", gradientEnd: "#3a3897",
             tags: ["Voyage", "Japon", "Culture"],
             summary: "Au-delà des temples célèbres, un Kyoto discret : ateliers d'artisans, jardins secrets et gestes transmis depuis des siècles.",
-            motifIndex: 3, imageName: "leaf.fill"
+            motifIndex: 3
         ),
         MediaItem(
             slug: "the-last-forest", title: "The Last Forest", cat: "Nature",
@@ -43,7 +43,7 @@ struct SampleData {
             gradientStart: "#06283d", gradientEnd: "#1f7a8c",
             tags: ["Nature", "Climat"],
             summary: "Au cœur d'une forêt primaire menacée, le portrait d'un écosystème et de celles et ceux qui le protègent.",
-            motifIndex: 0, imageName: "tree.fill"
+            motifIndex: 0
         ),
         MediaItem(
             slug: "voices-of-dakar", title: "Voices of Dakar", cat: "Culture & Musique",
@@ -51,7 +51,7 @@ struct SampleData {
             gradientStart: "#2a1259", gradientEnd: "#7c3aed",
             tags: ["Musique", "Culture"],
             summary: "Une génération d'artistes réinvente le son de Dakar, entre héritage et avenir, du studio à la scène.",
-            motifIndex: 1, imageName: "music.note"
+            motifIndex: 1
         ),
         MediaItem(
             slug: "code-of-tomorrow", title: "Code of Tomorrow", cat: "Tech",
@@ -59,7 +59,7 @@ struct SampleData {
             gradientStart: "#021024", gradientEnd: "#2563ff",
             tags: ["Tech", "IA", "Futur"],
             summary: "Comment le code façonne le monde de demain : rencontres avec les ingénieures qui dessinent nos outils.",
-            motifIndex: 2, imageName: "cpu.fill"
+            motifIndex: 2
         ),
         MediaItem(
             slug: "northern-lights", title: "Northern Lights", cat: "Voyage",
@@ -67,7 +67,7 @@ struct SampleData {
             gradientStart: "#0b1e3b", gradientEnd: "#5b21b6",
             tags: ["Voyage", "Nature"],
             summary: "Cap au nord, à la poursuite des aurores boréales — un carnet de route lumineux sous le ciel polaire.",
-            motifIndex: 3, imageName: "moon.stars.fill"
+            motifIndex: 3
         ),
         MediaItem(
             slug: "inside-motion", title: "Inside Motion", cat: "Sport & Performance",
@@ -75,7 +75,7 @@ struct SampleData {
             gradientStart: "#0a1a3f", gradientEnd: "#3b82f6",
             tags: ["Sport", "Performance"],
             summary: "L'instant suspendu de la performance : ce qui se joue dans le corps et l'esprit juste avant le geste parfait.",
-            motifIndex: 0, imageName: "figure.run"
+            motifIndex: 0
         ),
         MediaItem(
             slug: "fragments", title: "Fragments", cat: "Court-métrage",
@@ -83,7 +83,7 @@ struct SampleData {
             gradientStart: "#150f33", gradientEnd: "#4338ca",
             tags: ["Fiction", "Indé"],
             summary: "Court-métrage indépendant : trois vies se croisent l'espace d'une nuit dans une ville qui ne dort jamais.",
-            motifIndex: 1, imageName: "film.fill"
+            motifIndex: 1
         ),
     ]
 

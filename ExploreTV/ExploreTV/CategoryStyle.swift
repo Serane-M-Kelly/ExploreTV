@@ -34,6 +34,9 @@ enum Theme {
     static let textMuted = Color(hex: "8b97b3")
     static let categoryTint = Color(hex: "9fb0d8")
     static let accentLight = Color(hex: "9fc0ff")
+    static let chevronMuted = Color(hex: "566180")
+    static let overlayDark = Color(hex: "04060e")
+    static let badgeText = Color(hex: "dbe4ff")
 
     /// Dégradé bleu → violet des boutons "Regarder" et accents.
     static let buttonGradient = LinearGradient(

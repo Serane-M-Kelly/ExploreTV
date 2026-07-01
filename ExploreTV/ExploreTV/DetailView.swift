@@ -57,7 +57,7 @@ struct DetailView: View {
                 .frame(width: 38, height: 38)
                 .background(
                     Circle()
-                        .fill(Color(red: 4 / 255, green: 6 / 255, blue: 14 / 255).opacity(0.5))
+                        .fill(Theme.overlayDark.opacity(0.5))
                         .overlay(Circle().stroke(.white.opacity(0.18), lineWidth: 1))
                 )
         }

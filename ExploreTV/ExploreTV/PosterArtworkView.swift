@@ -8,8 +8,6 @@ struct PosterArtworkView: View {
     /// Ajoute le chrome des cartes (badge durée, dégradé bas, titre, catégorie).
     var showsCardOverlay: Bool = false
 
-    private let darkBottom = Color(red: 4 / 255, green: 6 / 255, blue: 14 / 255)
-
     var body: some View {
         GeometryReader { geo in
             let w = geo.size.width
@@ -82,7 +80,7 @@ struct PosterArtworkView: View {
     private func cardOverlay(w: CGFloat, h: CGFloat) -> some View {
         // Voile sombre en bas pour la lisibilité.
         LinearGradient(
-            colors: [.clear, darkBottom.opacity(0.94)],
+            colors: [.clear, Theme.overlayDark.opacity(0.94)],
             startPoint: .center,
             endPoint: .bottom
         )
@@ -92,12 +90,12 @@ struct PosterArtworkView: View {
             HStack {
                 Text(item.duration)
                     .font(.system(size: 10, weight: .semibold))
-                    .foregroundStyle(Color(hex: "dbe4ff"))
+                    .foregroundStyle(Theme.badgeText)
                     .padding(.horizontal, 8)
                     .padding(.vertical, 3)
                     .background(
                         Capsule()
-                            .fill(darkBottom.opacity(0.5))
+                            .fill(Theme.overlayDark.opacity(0.5))
                             .overlay(Capsule().stroke(.white.opacity(0.14), lineWidth: 1))
                     )
                 Spacer(minLength: 0)

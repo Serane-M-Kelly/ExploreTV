@@ -121,7 +121,7 @@ struct MyListView: View {
 
                         Image(systemName: "chevron.right")
                             .font(.system(size: 15, weight: .semibold))
-                            .foregroundStyle(Color(hex: "566180"))
+                            .foregroundStyle(Theme.chevronMuted)
                     }
                     .padding(9)
                     .background(

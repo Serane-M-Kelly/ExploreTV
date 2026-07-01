@@ -2,13 +2,13 @@ import Foundation
 import Combine
 
 final class FavoritesStore: ObservableObject {
-    @Published var favoriteIDs: Set<UUID>
+    @Published var favoriteIDs: Set<String>
 
-    private let storageKey = "favoriteIDs"
+    private let storageKey = "favoriteSlugs"
 
     init() {
         if let data = UserDefaults.standard.data(forKey: storageKey),
-           let decoded = try? JSONDecoder().decode(Set<UUID>.self, from: data) {
+           let decoded = try? JSONDecoder().decode(Set<String>.self, from: data) {
             favoriteIDs = decoded
         } else {
             favoriteIDs = []
@@ -16,16 +16,16 @@ final class FavoritesStore: ObservableObject {
     }
 
     func toggle(_ item: MediaItem) {
-        if favoriteIDs.contains(item.id) {
-            favoriteIDs.remove(item.id)
+        if favoriteIDs.contains(item.slug) {
+            favoriteIDs.remove(item.slug)
         } else {
-            favoriteIDs.insert(item.id)
+            favoriteIDs.insert(item.slug)
         }
         save()
     }
 
     func isFavorite(_ item: MediaItem) -> Bool {
-        favoriteIDs.contains(item.id)
+        favoriteIDs.contains(item.slug)
     }
 
     private func save() {

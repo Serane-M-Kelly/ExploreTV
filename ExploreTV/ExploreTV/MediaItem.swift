@@ -19,14 +19,7 @@ struct MediaItem: Identifiable {
     let summary: String
     /// Variante de motif décoratif (0…3), pour l'affiche abstraite.
     let motifIndex: Int
-    /// Symbole SF de repli (utilisé par certaines vues).
-    let imageName: String
     var isFavorite: Bool
-
-    /// Compatibilité : ancien nom de champ.
-    var overview: String { summary }
-    /// Nom du regroupement (comme dans la maquette).
-    var group: String { category.rawValue }
 
     init(
         id: UUID = UUID(),
@@ -41,7 +34,6 @@ struct MediaItem: Identifiable {
         tags: [String],
         summary: String,
         motifIndex: Int,
-        imageName: String,
         isFavorite: Bool = false
     ) {
         self.id = id
@@ -56,7 +48,6 @@ struct MediaItem: Identifiable {
         self.tags = tags
         self.summary = summary
         self.motifIndex = motifIndex
-        self.imageName = imageName
         self.isFavorite = isFavorite
     }
 }
