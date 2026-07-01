@@ -85,6 +85,70 @@ struct SampleData {
             summary: "Court-métrage indépendant : trois vies se croisent l'espace d'une nuit dans une ville qui ne dort jamais.",
             motifIndex: 1
         ),
+        MediaItem(
+            slug: "deep-roots", title: "Deep Roots", cat: "Documentaire",
+            category: .documentaires, duration: "46 min", year: "2024",
+            gradientStart: "#06283d", gradientEnd: "#1f6f9c",
+            tags: ["Nature", "Botanique"],
+            summary: "Sous la canopée, un réseau invisible relie les arbres entre eux. Portrait d'une forêt qui communique en silence.",
+            motifIndex: 2
+        ),
+        MediaItem(
+            slug: "silent-cities", title: "Silent Cities", cat: "Série documentaire",
+            category: .documentaires, duration: "5 × 30 min", year: "2022",
+            gradientStart: "#101a3a", gradientEnd: "#3550c8",
+            tags: ["Urbain", "Architecture"],
+            summary: "Ce que deviennent les villes quand leurs habitants s'endorment : cinq métropoles racontées par leur silence nocturne.",
+            motifIndex: 3
+        ),
+        MediaItem(
+            slug: "desert-song", title: "Desert Song", cat: "Voyage",
+            category: .voyagesCultures, duration: "49 min", year: "2023",
+            gradientStart: "#14163a", gradientEnd: "#4b2fae",
+            tags: ["Voyage", "Désert"],
+            summary: "Une traversée des grandes étendues arides, à la rencontre de peuples qui font chanter le sable et le vent.",
+            motifIndex: 0
+        ),
+        MediaItem(
+            slug: "island-time", title: "Island Time", cat: "Voyage & Culture",
+            category: .voyagesCultures, duration: "38 min", year: "2025",
+            gradientStart: "#0a2230", gradientEnd: "#2f7fae",
+            tags: ["Îles", "Culture"],
+            summary: "Loin des cartes touristiques, des archipels où le temps s'écoule autrement — rituels, marées et mémoire du large.",
+            motifIndex: 1
+        ),
+        MediaItem(
+            slug: "quantum-dawn", title: "Quantum Dawn", cat: "Science",
+            category: .scienceFutur, duration: "51 min", year: "2024",
+            gradientStart: "#0a1230", gradientEnd: "#4338ca",
+            tags: ["Physique", "Futur"],
+            summary: "Aux confins de l'infiniment petit, une nouvelle génération de chercheurs réécrit les règles du réel.",
+            motifIndex: 2
+        ),
+        MediaItem(
+            slug: "neural-tide", title: "Neural Tide", cat: "Tech",
+            category: .scienceFutur, duration: "42 min", year: "2025",
+            gradientStart: "#021024", gradientEnd: "#2563ff",
+            tags: ["IA", "Neuro"],
+            summary: "Quand les machines apprennent à apprendre : enquête sur les marées invisibles qui redessinent notre quotidien.",
+            motifIndex: 3
+        ),
+        MediaItem(
+            slug: "last-train", title: "Last Train", cat: "Court-métrage",
+            category: .courtsMetrages, duration: "15 min", year: "2024",
+            gradientStart: "#150f33", gradientEnd: "#5b21b6",
+            tags: ["Fiction", "Nuit"],
+            summary: "Sur le dernier quai, deux inconnus attendent un train qui n'arrivera peut-être jamais. Court-métrage suspendu.",
+            motifIndex: 0
+        ),
+        MediaItem(
+            slug: "paper-moon", title: "Paper Moon", cat: "Court-métrage",
+            category: .courtsMetrages, duration: "12 min", year: "2023",
+            gradientStart: "#0b1e3b", gradientEnd: "#6d28d9",
+            tags: ["Animation", "Poésie"],
+            summary: "Un conte animé où la lune de papier veille sur une enfant qui refuse de grandir. Petit bijou poétique.",
+            motifIndex: 1
+        ),
     ]
 
     private static let bySlug: [String: MediaItem] = Dictionary(
@@ -97,11 +161,11 @@ struct SampleData {
 
     /// Sections horizontales de l'accueil (maquette homeRows).
     static let homeRows: [(title: String, items: [MediaItem])] = [
-        ("À la une", items(slugs: ["beyond-mars", "hidden-kyoto", "voices-of-dakar", "code-of-tomorrow"])),
-        ("Documentaires", items(slugs: ["ocean-memory", "street-pulse", "the-last-forest"])),
-        ("Voyages & Cultures", items(slugs: ["hidden-kyoto", "northern-lights", "voices-of-dakar"])),
-        ("Science & Futur", items(slugs: ["beyond-mars", "code-of-tomorrow"])),
-        ("Courts-métrages", items(slugs: ["fragments", "inside-motion"])),
+        ("À la une", items(slugs: ["beyond-mars", "hidden-kyoto", "voices-of-dakar", "code-of-tomorrow", "quantum-dawn"])),
+        ("Documentaires", items(slugs: ["ocean-memory", "street-pulse", "the-last-forest", "deep-roots", "silent-cities"])),
+        ("Voyages & Cultures", items(slugs: ["hidden-kyoto", "northern-lights", "voices-of-dakar", "desert-song", "island-time"])),
+        ("Science & Futur", items(slugs: ["beyond-mars", "code-of-tomorrow", "quantum-dawn", "neural-tide"])),
+        ("Courts-métrages", items(slugs: ["fragments", "inside-motion", "last-train", "paper-moon"])),
     ]
 
     /// Contenu mis en avant dans le hero (maquette : featured-id="beyond-mars").
