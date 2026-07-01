@@ -41,9 +41,11 @@ struct HeroBannerView: View {
                         .foregroundStyle(Theme.accentBlue2)
                         .offset(x: 1)
                 }
-                (Text("Explore").foregroundColor(.white)
-                    + Text("TV").foregroundColor(Theme.accentBlue2))
-                    .font(.system(size: 19, weight: .heavy))
+                HStack(spacing: 0) {
+                    Text("Explore").foregroundStyle(.white)
+                    Text("TV").foregroundStyle(Theme.accentBlue2)
+                }
+                .font(.system(size: 19, weight: .heavy))
             }
             Spacer()
             ZStack {
